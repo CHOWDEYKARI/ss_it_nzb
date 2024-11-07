@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sustainability Startup</title>
+    <style>
+/* START */
+            /* start fixed Navbar responsive */
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .navbar {
+                    flex-direction: column;
+                    /* Stack items vertically on smaller screens */
+                    padding: 1rem;
+                    /* Adjust padding */
+                }
+
+                .navbar img.logo {
+                    width: 100px;
+                    /* Reduce logo size on smaller screens */
+                }
+
+                .navbar a {
+                    margin: 0.5rem 0;
+                    /* Adjust margin for links */
+                    font-size: 16px;
+                    /* Smaller font size for links */
+                }
+
+                .nav-buttons {
+                    flex-direction: column;
+                    /* Stack buttons vertically */
+                    align-items: center;
+                    /* Center align buttons */
+                    margin: 1rem 0;
+                    /* Add margin */
+                }
+
+                .nav-button {
+                    width: 100%;
+                    /* Full width for buttons */
+                    margin: 0.5rem 0;
+                    /* Add margin for buttons */
+                    text-align: center;
+                    /* Center text */
+                }
+            }
+
+            @media (max-width: 480px) {
+                .navbar img.logo {
+                    width: 80px;
+                    /* Further reduce logo size for very small screens */
+                }
+
+                .navbar a {
+                    font-size: 14px;
+                    /* Even smaller font size for links */
+                }
+
+                .nav-button {
+                    padding: 8px 15px;
+                    /* Adjust padding for buttons */
+                }
+            }
+
+            /* the end fixed navbar responsive */
+            .navbar img.logo {
+                width: 130px;
+                /* Adjust size as needed */
+            }
+
+            /* start Navbar */
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #282c34;
+                padding: 1rem 2rem;
+                font-family: 'Arial', sans-serif;
+                position: fixed;
+                /* Fixes the navbar at the top */
+                top: 0;
+                /* Positions it at the top of the viewport */
+                width: 100%;
+                /* Ensures it spans the full width of the viewport */
+                z-index: 1000;
+                /* Keeps the navbar on top of other elements */
+            }
+
+
+            .nav-links {
+                margin-right: 1px;
+            }
+
+            .navbar a {
+                color: #e1e1e1;
+                text-decoration: none;
+                margin: 0 1rem;
+                font-size: 18px;
+                transition: color 0.3s ease-in-out;
+            }
+
+            .navbar a:hover {
+                color: #ffeb3b;
+            }
+
+            /* Back, Home, Forward Buttons */
+            /* Back, Home, Forward Buttons */
+            .nav-buttons {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0;
+                text-align: center;
+            }
+
+            .nav-button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 1em;
+                text-align: center;
+                border-radius: 5px;
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+            }
+
+            .nav-button.back {
+                margin-left: 60px;
+                background-color: #007bff;
+                /* Blue background for Back button */
+            }
+
+            .nav-button.home {
+                background-color: #ffc107;
+                /* Yellow background for Home button */
+            }
+
+            .nav-button.forward {
+                background-color: #28a745;
+                /* Green background for Forward button */
+            }
+
+            .nav-button:hover {
+                opacity: 0.8;
+            }
+
+            /* the end back, home, forward nav buttons */
+
+            /* Footer Styling */
+            .footer {
+                background-color: #282c34;
+                color: #e1e1e1;
+                width: 100%;
+                padding: 3rem 0;
+                font-family: 'Arial', sans-serif;
+            }
+
+            .footer .heading {
+                color: #ffeb3b;
+                text-transform: uppercase;
+                margin: 0 auto;
+                margin-bottom: 3rem;
+                text-align: center;
+                animation: bounceIn 20s ease-in-out;
+            }
+
+            .footer .content {
+                display: flex;
+                justify-content: space-around;
+                margin: 1.5rem;
+                flex-wrap: wrap;
+                animation: fadeInUp 15s ease-in-out;
+            }
+
+            .footer .content div {
+                border: 3px solid;
+                border-image: linear-gradient(45deg, #ff5722, #03a9f4, #4caf50, #f44336);
+                border-image-slice: 1;
+                border-radius: 12px;
+                padding: 7px;
+                margin: 0.5rem;
+                width: 22%;
+                background-color: #3c3f41;
+                color: yellow;
+            }
+
+            .footer .content p {
+                margin-bottom: 1rem;
+            }
+
+            .footer .content a {
+                text-decoration: none;
+                color: yellow;
+                transition: color 9s ease-in-out, text-shadow 0.3s ease-in-out;
+            }
+
+            .footer .content a:hover {
+                color: #ff5722;
+                text-shadow: 1px 1px 2px rgba(255, 87, 34, 0.6);
+            }
+
+            .footer .content h4 {
+                margin-bottom: 1rem;
+                font-size: 22px;
+                color: #ffeb3b;
+            }
+
+            footer {
+                text-align: center;
+                margin: 2rem auto;
+                border-top: 3px solid #ff5722;
+                padding-top: 1rem;
+            }
+
+            footer hr {
+                margin: 2rem 0;
+                border: 0;
+                border-top: 2px dashed #ff5722;
+            }
+
+            .footer-text {
+                font-size: 21px;
+                color: #e1e1e1;
+                animation: textAnimation 25s infinite;
+            }
+
+            /* Responsive Styles */
+            @media (max-width: 767px) {
+                .navbar {
+                    flex-direction: column;
+                }
+
+                .footer .content {
+                    display: block;
+                }
+
+                .footer .content div {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 1024px) {
+                .footer .content div {
+                    width: 48%;
+                }
+            }
+
+            /* Animations */
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes bounceIn {
+                from {
+                    opacity: 0;
+                    transform: scale(0.3);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes textAnimation {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    color: #ff5722;
+                }
+
+                25% {
+                    opacity: 1;
+                    transform: translateY(0);
+                    color: #03a9f4;
+                }
+
+                50% {
+                    opacity: 0.8;
+                    color: #4caf50;
+                }
+
+                75% {
+                    opacity: 1;
+                    color: #f44336;
+                }
+
+                100% {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+            }
+
+            .footer-text {
+                font-size: 21px;
+                color: #e1e1e1;
+                animation: textAnimation 5s infinite;
+                display: inline-block;
+            }
+
+            /* the end footer */
+
+        /* start social media */
+        /* Sidebar Styles */
+        .social_Media_Icons_sidebar {
+            position: fixed;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .social_Media_Icons_link {
+            display: block;
+            margin: 10px 0;
+            width: 40px;
+            height: 40px;
+
+            element {
+                background-color: white;
+                /* Sets the background color to white */
+                border: none;
+                /* Removes any border */
+            }
+
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .social_Media_Icons_link img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .social_Media_Icons_link:hover {
+            transform: scale(1.1);
+        }
+
+        /* the end social media */
+
+
+        /* start chatbot */
+
+        /* start Chatbot Styles */
+        #chat-container {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            transition: all 0.3s ease;
+            z-index: 1001;
+            /* Ensure it appears above other content */
+        }
+
+        #chat-container.minimized {
+            height: 50px;
+        }
+
+        #chat-header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        #chat-header button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #chat-box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        #chat-content {
+            flex: 1;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+
+        #user-input {
+            width: calc(100% - 60px);
+            height: 50px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+
+        #send-btn {
+            width: 90px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #send-btn:hover {
+            background-color: #0056b3;
+        }
+
+        #chat-content div.user {
+            text-align: right;
+            margin-bottom: 5px;
+            color: #007bff;
+        }
+
+        #chat-content div.bot {
+            text-align: left;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .video-grid video {
+                width: 100%;
+            }
+        }
+        /*---the end chatbot-*/
+
+        /* Footer Section */
+        .footer {
+            background-color: #2F4F4F;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+/* THE END */
+
+    /* START CSS BLINKING SUSTAINABILITY STARTUP, IT HUB NIZAMABAD  */
+    .blinking-text {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      animation: blinkColor 2s infinite;
+    }
+    /* Keyframes for blinking animation */
+    @keyframes blinkColor {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    /* THE END CSS BLINKING SUSTAINABILITY STARTUP, IT HUB NIZAMABAD  */
+/* start extra part */
+        /* Basic Styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            overflow-x: hidden;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(90deg, #00c9ff, #92fe9d);
+            font-size: 2.5em;
+            padding: 20px;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+/* START CONTACT US USING CSS */
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        header {
+            background: rgb(255, 100, 150);
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 9s ease-in;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: white;
+            animation: slideDown 9s ease-in;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            background-color: rgb(200, 255, 150);
+            border: 2px solid rgb(255, 100, 0);
+            border-radius: 8px;
+            margin: 20px auto;
+            animation: bounceIn 9s ease-in infinite alternate;
+            max-width: 600px;
+            width: 100%; /* Responsive width */
+        }
+        .form-group {
+            width: 100%;
+            margin: 10px 0;
+            animation: fadeInUp 9.1s ease-in-out infinite alternate;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            color: rgb(50, 50, 150);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid rgb(0, 100, 100);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            transition: border-color 9.1s;
+        }
+        input:focus, textarea:focus {
+            border-color: rgb(0, 150, 150);
+            outline: none;
+            animation: glow 9.1s ease-in-out forwards;
+        }
+        button {
+            background-color: rgb(100, 150, 255);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            animation: pulse 2s infinite alternate;
+        }
+        button:hover {
+            background-color: rgb(0, 120, 255);
+        }
+        .message-box {
+            display: none;
+            background-color: rgb(255, 255, 0);
+            border: 2px solid rgb(0, 255, 0);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes bounceIn {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes glow {
+            0% { border-color: rgb(0, 100, 100); }
+            50% { border-color: rgb(0, 200, 200); }
+            100% { border-color: rgb(0, 100, 100); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        /* THE END CONTACT US USING CSS */
+
+        /* start contact us using css Chatbot Styles */
+        #chat-container {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            transition: all 0.3s ease;
+            z-index: 1001;
+            /* Ensure it appears above other content */
+        }
+
+        #chat-container.minimized {
+            height: 50px;
+        }
+
+        #chat-header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        #chat-header button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #chat-box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        #chat-content {
+            flex: 1;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+
+        #user-input {
+            width: calc(100% - 60px);
+            height: 50px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+
+       
+        #send-btn:hover {
+            background-color: #0056b3;
+        }
+
+        #chat-content div.user {
+            text-align: right;
+            margin-bottom: 5px;
+            color: #007bff;
+        }
+
+        #chat-content div.bot {
+            text-align: left;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .video-grid video {
+                width: 100%;
+            }
+        }
+
+        /*---the end chatbot-*/
+
+        /* Main content styling */
+        main {
+            padding: 10px;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #232F3E;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .accordion {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .accordion-title {
+            background-color: #232F3E;
+            color: #fff;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .accordion-content p {
+            margin: 0;
+        }
+
+/* START MAIN CONTACT PAGE */
+.container {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 3px solid #ff9900;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .contact-info div {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            border: 3px solid;
+            background: linear-gradient(45deg, #f9f9f9, #e0e0e0);
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info div h2 {
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #ff9900, #ffcc00);
+            -webkit-background-clip: text;
+            /* Clip background to text */
+            -webkit-text-fill-color: transparent;
+            /* Make text color transparent to show gradient */
+            background-clip: text;
+            /* Standard property for future support */
+            color: transparent;
+            /* Fallback for browsers that don’t support background-clip: text */
+        }
+
+
+        .contact-info div p {
+            margin: 5px 0;
+        }
+
+        .contact-info div a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info div a:hover {
+            text-decoration: underline;
+        }
+        .animation {
+            width: 100%;
+            height: 200px;
+            background: url('./jpeg/png/LOGO.png') repeat center center;
+            background-size: cover;
+            animation: slide 5s infinite alternate;
+            margin-top: 20px;
+        }
+
+        @keyframes slide {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        .btn-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .btn-container button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: #007bff;
+            transition: background-color 0.3s;
+            margin: 10px;
+        }
+
+        .btn-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .message {
+            display: none;
+            padding: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            border-radius: 15px;
+            transition: background-color 0.5s, color 0.5s;
+            animation: blink 1s infinite;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes blink {
+            0% {
+                background-color: #ff0000;
+            }
+
+            25% {
+                background-color: #00ff00;
+            }
+
+            50% {
+                background-color: #0000ff;
+            }
+
+            75% {
+                background-color: #ff00ff;
+            }
+
+            100% {
+                background-color: #ff0000;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info div {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+/* THE END MAIN CONTACT PAGE */
+/* the end contact us using css Chatbot Styles */
+</style>
+</head>
+
+
+<body>
+    <!-- start fixed navbar -->
+    <nav class="navbar">
+        <img src="./JPEG/PNG/LOGO.png" alt="Animated Logo" class="logo">
+        <div class="nav-links">
+            <a href="ABOUTUS.html">ABOUT US</a>
+            <a href="CONTACTUS.html">CONTACT US</a>
+            <!-- <a href="services.html">SERVICES</a> -->
+            <a href="ABOUTUS.html" class="nav-button back">Back</a>
+            <a href="home_Page.html" class="nav-button home">Home</a>
+            <a href="CONTACTUS.html" class="nav-button forward">Forward</a>
+        </div>
+    </nav>
+    <!-- the end fixed navbar -->
+
+    <!-- Back, Home, Forward Buttons -->
+    <div class="nav-buttons">
+        <a href="home_Page.html" class="nav-button back">Back</a>
+        <!-- <a href="home_Page.html" class="nav-button home">Home</a> -->
+        <a href="CONTACTUS.html" class="nav-button forward">Forward</a>
+    </div> </br></br></br></br>
+    <!-- the end navbar -->
+
+
+    <!-- START HTML AND JAVASCRIPT BLINKING SUSTAINABILITY STARTUP, IT HUB NIZAMABAD -->
+  <div class="blinking-text" id="blinkingText">WELCOME</br>TO</br>SUSTAINABILITY STARTUP</brF>IT HUB NIZAMABAD</div>
+
+  <script>
+    // JavaScript to handle random RGB colors
+    function getRandomColor() {
+      // Generate random values for RGB
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      return `rgb(${r},${g},${b})`;
+    }
+
+    // Change the color of the blinking text every 500 ms
+    setInterval(() => {
+      const blinkingText = document.getElementById('blinkingText');
+      blinkingText.style.color = getRandomColor();
+    }, 100);
+  </script>
+  <!--THE END HTML AND JAVASCRIPT BLINKING SUSTAINABILITY STARTUP, IT HUB NIZAMABAD -->
+    </script>
+
+
+            <!-- start social media -->
+            <div class="social_Media_Icons_sidebar">
+                <a href="https://www.whatsapp.com/" class="social_Media_Icons_link" data-voice="What's up"><img
+                        src="./jpeg/png/whatsup.png" alt="WhatsApp"></a>
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"
+                    class="social_Media_Icons_link" data-voice="Facebook"><img src="./jpeg/png/facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://x.com/i/flow/login" class="social_Media_Icons_link" data-voice="X"><img
+                        src="./jpeg/png/x.png" alt="X"></a>
+                <a href="https://www.instagram.com/accounts/login/?hl=en" class="social_Media_Icons_link"
+                    data-voice="Instagram"><img src="./jpeg/png/instagram.png" alt="Instagram"></a>
+                <a href="https://in.linkedin.com/" class="social_Media_Icons_link" data-voice="LinkedIn"><img
+                        src="./jpeg/png/linked_In.png" alt="LinkedIn"></a>
+            </div>
+    
+            <script>
+                if (!('speechSynthesis' in window)) {
+                    alert("Sorry, your browser does not support the Web Speech API.");
+                } else {
+                    let currentUtterance = null;
+    
+                    function speakText(text) {
+                        if (currentUtterance) {
+                            speechSynthesis.cancel(); // Cancel any ongoing speech
+                        }
+                        currentUtterance = new SpeechSynthesisUtterance(text);
+                        currentUtterance.onend = () => currentUtterance = null; // Clear reference when done
+                        speechSynthesis.speak(currentUtterance);
+                    }
+    
+                    document.querySelectorAll('.social_Media_Icons_link').forEach(icon => {
+                        icon.addEventListener('mouseover', () => {
+                            const voiceText = icon.getAttribute('data-voice');
+                            if (voiceText) {
+                                speakText(voiceText);
+                            }
+                        });
+    
+                        icon.addEventListener('mouseout', () => {
+                            if (currentUtterance) {
+                                speechSynthesis.cancel(); // Stop speech when the mouse leaves
+                            }
+                        });
+                    });
+                }
+            </script>
+            <!-- the end social media -->
+    
+    
+            <!---start chatbot-->
+            <div id="chat-container">
+                <div id="chat-header">
+                    <h2>Chat with us</h2>
+                    <button id="close-btn">&times;</button>
+                </div>
+                <div id="chat-box">
+                    <div id="chat-content">
+                        <!-- Chat messages will be appended here -->
+                    </div>
+                    <textarea id="user-input" placeholder="Type your message here..."></textarea>
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+    
+            <script>
+                // Navbar Username Blinking (Optional)
+                const usernameDisplay = document.getElementById('usernameDisplay');
+                const username = "Mr. AI";
+                if (usernameDisplay) {
+                    usernameDisplay.innerText = `Welcome ${username}`;
+                    usernameDisplay.style.display = 'inline';
+                }
+    
+                // Chatbot Toggle
+                const chatContainer = document.getElementById('chat-container');
+                const closeBtn = document.getElementById('close-btn');
+                const sendBtn = document.getElementById('send-btn');
+                const userInput = document.getElementById('user-input');
+                const chatContent = document.getElementById('chat-content');
+    
+                closeBtn.addEventListener('click', () => {
+                    chatContainer.classList.toggle('minimized');
+                });
+    
+                sendBtn.addEventListener('click', () => {
+                    const userMessage = userInput.value.trim();
+                    if (userMessage) {
+                        const userDiv = document.createElement('div');
+                        userDiv.className = 'user';
+                        userDiv.innerText = `You: ${userMessage}`;
+                        chatContent.appendChild(userDiv);
+    
+                        // Immediately respond with a bot message
+                        const botDiv = document.createElement('div');
+                        botDiv.className = 'bot';
+                        botDiv.innerText = `Bot: Thank you for your message!`;
+                        chatContent.appendChild(botDiv);
+    
+                        // Convert bot response to speech
+                        const utterance = new SpeechSynthesisUtterance(botDiv.innerText);
+                        speechSynthesis.speak(utterance);
+    
+                        chatContent.scrollTop = chatContent.scrollHeight;
+                        userInput.value = '';
+                    }
+                });
+            </script>
+            <!---the end chatbot-->
+    
+<!-- START CONTACT US USING HTML AND JAVASCRIPT -->
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<div class="container">
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+    <div class="message-box" id="messageBox"></div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Voice feedback using Web Speech API
+        const synth = window.speechSynthesis;
+        const welcomeMessage = "Welcome to our contact us page. Please fill in your full name, mobile number, email ID, and your message.";
+        
+        // Speak on load
+        const speakText = (text) => {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.voice = synth.getVoices()[0];
+            utterance.lang = 'en-US';
+            synth.speak(utterance);
+        };
+
+        // Speak when the form is submitted
+        const contactForm = document.getElementById('contactForm');
+        const messageBox = document.getElementById('messageBox');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('fullName').value;
+            const mobile = document.getElementById('mobile').value;
+            const email = document.getElementById('email').value;
+            const message = "Thank you for contacting us, " + name + ". We have received your message. You can be reached at " + mobile + " or " + email + ". We will get back to you soon.";
+            
+            // Display the message box
+            messageBox.innerText = message;
+            messageBox.style.display = 'block';
+
+            // Speak the confirmation message
+            speakText(message);
+        });
+
+        // Speak welcome message on page load
+        speakText(welcomeMessage);
+    });
+</script>
+<!-- THE END CONTACT US USING HTML AND JAVASCRIPT -->
+
+<!-- START CHATTING AND CALL ME USING HTML AND CSS -->
+
+<!-- START MAIN CONTACT PAGE -->
+<div class="container">
+    <h1>Contact Us & Interactive Messaging</h1>
+    <div class="animation"></div>
+    <div class="btn-container">
+        <button id="start-chat">Start Chatting</button>
+        <button id="call-me">Call Me</button>
+    </div>
+    <div class="message" id="message1">Chat started! Our representative will assist you shortly!</div>
+    <div class="message" id="message2">Thank you for calling. Your request has been recorded, and we will get back to you as soon as possible.</div>
+
+
+    <div class="contact-info">
+        <div>
+            <h2>Contact Number</h2>
+            <p><a href="tel:+919848945713">+91 9848945713</a></p>
+        </div>
+        <div>
+            <h2>Email ID</h2>
+            <p><a href="mailto:maheshwer.chowdeykari@gmail.com">maheshwer.chowdeykari@gmail.com</a></p>
+        </div>
+    </div>
+<!--THE END CHATTIND AND CALL ME USING HTML AND JAVASCRIPT  -->
+
+
+<script>
+    // Initialize Web Speech API's SpeechSynthesis
+    const synth = window.speechSynthesis;
+    let speaking = false;
+
+    function speak(text) {
+        if (speaking) {
+            synth.cancel(); // Stop any ongoing speech
+        }
+        speaking = true;
+
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.onend = () => {
+            speaking = false;
+        };
+        synth.speak(utterance);
+    }
+
+    document.getElementById('start-chat').addEventListener('click', () => {
+        document.getElementById('message1').style.display = 'block';
+        speak('Chat started! A representative will assist you shortly!');
+        setTimeout(() => {
+            document.getElementById('message1').style.display = 'none';
+        }, 3000);
+    });
+
+    document.getElementById('call-me').addEventListener('click', () => {
+        document.getElementById('message2').style.display = 'block';
+        speak('Your call request has been recorded. We will call you soon!');
+        setTimeout(() => {
+            document.getElementById('message2').style.display = 'none';
+        }, 3000);
+    });
+
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.classList.toggle('active');
+        });
+    });
+</script>
+<!-- START contact us MAIN CONTACT PAGE -->
+
+
+<!--start Footer -->
+            <div class="footer">
+                <div class="heading">
+                    <h2>SUSTAINABILITY STARTUP<sup>™</sup></h2>
+                </div>
+                <div class="content">
+                    <div class="services">
+                            <h4>Services</h4>
+                            <p><a href="#">SUSTAINABILITY STARTUP VIDEOS</a></p>
+                            <p><a href="#">SUSTAINABILITY STARTUP IMAGES</a></p>
+                            
+                    </div>
+                    <div class="social-media">
+                        <h4>Social</h4>
+                        <p><a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i> Linkedin</a></p>
+                        <p><a href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i> X</a></p>
+                        <p><a href="https://github.com/"><i class="fab fa-github"></i> Github</a></p>
+                        <p><a href="https://www.facebook.com/codewithfaraz"><i class="fab fa-facebook"></i> Facebook</a></p>
+                        <p><a href="https://www.instagram.com/codewithfaraz"><i class="fab fa-instagram"></i> Instagram</a>
+                        </p>
+                    </div>
+                    <div class="links">
+                        <h4>Quick links</h4>
+                        <p><a href="home_Page.html">HOME PAGE</a></p>
+                        <p><a href="ABOUTUS.html">ABOUT US</a></p>
+                        <p><a href="CONTACTUS.html">CONTACT US</a></p>
+                        <!-- <p><a href="services.html">SERVICES</a></p> -->
+                    </div>
+                    <div class="details">
+                        <h4 class="address">ADDRESS:</h4>
+                        <p>H.NO: 6-2-125,<br /> IT HUB NIZAMABAD,<br /> BESIDE COLLECTOR OFFICE,<br /> BYPASS ROAD,<br />
+                            NEAR G.G. COLLEGE,<br /> NIZAMABAD, TELANGANA STATE,<br /> INDIA, PIN CODE: 503001</p>
+                    </div>
+                </div>
+                <hr>
+                <footer>
+                    <div class="footer-text">
+                        (C) All rights reserved 2024 - 2025. </br> Designed and Developed by MAHESHWER_CHOWDEYKARI  . </br> Sustainability Startup, IT Hub, Nizamabad.                </div>
+                    <hr />
+                </footer>
+            </div>
+            <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    
+    
+    </body>
+    
+    </html>
+</body>
+</html>

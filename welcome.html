@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Traditional Welcome</title>
+    <style>
+        /* General Reset and Responsive Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            transition: background-color 1s; /* Smooth transition for background color */
+        }
+
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            max-width: 1200px; /* Increased max-width to accommodate side images */
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 5px solid rgb(100, 100, 250);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .welcome-girl {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+            margin: 0 20px; /* Space between images and text */
+            border: 8px solid rgb(80, 255, 80);
+            transition: border-color 1s; /* Smooth transition for image border color */
+            animation: blink 1s infinite; /* Blinking effect */
+        }
+
+        .text-container {
+            text-align: center;
+            flex-grow: 1; /* Allows the text container to grow and take available space */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: rgb(255, 80, 80);
+            margin-bottom: 10px;
+            animation: colorChange 3s infinite;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: rgb(80, 80, 255);
+            margin-bottom: 20px;
+            animation: fontSizeChange 4s infinite;
+        }
+
+        /* Button Styling */
+        .speak-btn {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(255, 100, 100);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .speak-btn:hover {
+            background-color: rgb(100, 255, 100);
+            color: black;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes colorChange {
+            0% { color: rgb(255, 80, 80); }
+            50% { color: rgb(80, 255, 80); }
+            100% { color: rgb(255, 80, 80); }
+        }
+
+        @keyframes fontSizeChange {
+            0%, 100% { font-size: 1.2em; }
+            50% { font-size: 1.5em; }
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            50.1%, 100% { opacity: 0.5; }
+        }
+
+/* start nav */
+ /* start fixed Navbar responsive */
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .navbar {
+                    flex-direction: column;
+                    /* Stack items vertically on smaller screens */
+                    padding: 1rem;
+                    /* Adjust padding */
+                }
+
+                .navbar img.logo {
+                    width: 100px;
+                    /* Reduce logo size on smaller screens */
+                }
+
+                .navbar a {
+                    margin: 0.5rem 0;
+                    /* Adjust margin for links */
+                    font-size: 16px;
+                    /* Smaller font size for links */
+                }
+
+                .nav-buttons {
+                    flex-direction: column;
+                    /* Stack buttons vertically */
+                    align-items: center;
+                    /* Center align buttons */
+                    margin: 1rem 0;
+                    /* Add margin */
+                }
+
+                .nav-button {
+                    width: 100%;
+                    /* Full width for buttons */
+                    margin: 0.5rem 0;
+                    /* Add margin for buttons */
+                    text-align: center;
+                    /* Center text */
+                }
+            }
+
+            @media (max-width: 480px) {
+                .navbar img.logo {
+                    width: 80px;
+                    /* Further reduce logo size for very small screens */
+                }
+
+                .navbar a {
+                    font-size: 14px;
+                    /* Even smaller font size for links */
+                }
+
+                .nav-button {
+                    padding: 8px 15px;
+                    /* Adjust padding for buttons */
+                }
+            }
+
+            /* the end fixed navbar responsive */
+            .navbar img.logo {
+                width: 130px;
+                /* Adjust size as needed */
+            }
+
+            /* start Navbar */
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #282c34;
+                padding: 1rem 2rem;
+                font-family: 'Arial', sans-serif;
+                position: fixed;
+                /* Fixes the navbar at the top */
+                top: 0;
+                /* Positions it at the top of the viewport */
+                width: 100%;
+                /* Ensures it spans the full width of the viewport */
+                z-index: 1000;
+                /* Keeps the navbar on top of other elements */
+            }
+
+
+            .nav-links {
+                margin-right: 1px;
+            }
+
+            .navbar a {
+                color: #e1e1e1;
+                text-decoration: none;
+                margin: 0 1rem;
+                font-size: 18px;
+                transition: color 0.3s ease-in-out;
+            }
+
+            .navbar a:hover {
+                color: #ffeb3b;
+            }
+
+            /* Back, Home, Forward Buttons */
+            /* Back, Home, Forward Buttons */
+            .nav-buttons {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0;
+                text-align: center;
+            }
+
+            .nav-button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 1em;
+                text-align: center;
+                border-radius: 5px;
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+            }
+
+            .nav-button.back {
+                margin-left: 60px;
+                background-color: #007bff;
+                /* Blue background for Back button */
+            }
+
+            .nav-button.home {
+                background-color: #ffc107;
+                /* Yellow background for Home button */
+            }
+
+            .nav-button.forward {
+                background-color: #28a745;
+                /* Green background for Forward button */
+            }
+
+            .nav-button:hover {
+                opacity: 0.8;
+            }
+
+            /* the end back, home, forward nav buttons */
+
+            /* Footer Styling */
+            .footer {
+                background-color: #282c34;
+                color: #e1e1e1;
+                width: 100%;
+                padding: 3rem 0;
+                font-family: 'Arial', sans-serif;
+            }
+
+            .footer .heading {
+                color: #ffeb3b;
+                text-transform: uppercase;
+                margin: 0 auto;
+                margin-bottom: 3rem;
+                text-align: center;
+                animation: bounceIn 20s ease-in-out;
+            }
+
+            .footer .content {
+                display: flex;
+                justify-content: space-around;
+                margin: 1.5rem;
+                flex-wrap: wrap;
+                animation: fadeInUp 15s ease-in-out;
+            }
+
+            .footer .content div {
+                border: 3px solid;
+                border-image: linear-gradient(45deg, #ff5722, #03a9f4, #4caf50, #f44336);
+                border-image-slice: 1;
+                border-radius: 12px;
+                padding: 7px;
+                margin: 0.5rem;
+                width: 22%;
+                background-color: #3c3f41;
+                color: yellow;
+            }
+
+            .footer .content p {
+                margin-bottom: 1rem;
+            }
+
+            .footer .content a {
+                text-decoration: none;
+                color: yellow;
+                transition: color 9s ease-in-out, text-shadow 0.3s ease-in-out;
+            }
+
+            .footer .content a:hover {
+                color: #ff5722;
+                text-shadow: 1px 1px 2px rgba(255, 87, 34, 0.6);
+            }
+
+            .footer .content h4 {
+                margin-bottom: 1rem;
+                font-size: 22px;
+                color: #ffeb3b;
+            }
+
+            footer {
+                text-align: center;
+                margin: 2rem auto;
+                border-top: 3px solid #ff5722;
+                padding-top: 1rem;
+            }
+
+            footer hr {
+                margin: 2rem 0;
+                border: 0;
+                border-top: 2px dashed #ff5722;
+            }
+
+            .footer-text {
+                font-size: 21px;
+                color: #e1e1e1;
+                animation: textAnimation 25s infinite;
+            }
+
+            /* Responsive Styles */
+            @media (max-width: 767px) {
+                .navbar {
+                    flex-direction: column;
+                }
+
+                .footer .content {
+                    display: block;
+                }
+
+                .footer .content div {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 1024px) {
+                .footer .content div {
+                    width: 48%;
+                }
+            }
+
+            /* Animations */
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes bounceIn {
+                from {
+                    opacity: 0;
+                    transform: scale(0.3);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes textAnimation {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    color: #ff5722;
+                }
+
+                25% {
+                    opacity: 1;
+                    transform: translateY(0);
+                    color: #03a9f4;
+                }
+
+                50% {
+                    opacity: 0.8;
+                    color: #4caf50;
+                }
+
+                75% {
+                    opacity: 1;
+                    color: #f44336;
+                }
+
+                100% {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+            }
+
+            .footer-text {
+                font-size: 21px;
+                color: #e1e1e1;
+                animation: textAnimation 5s infinite;
+                display: inline-block;
+            }
+
+            /* the end footer */
+/* the end nav */
+    </style>
+</head>
+<body>
+<!-- start fixed navbar -->
+<nav class="navbar">
+    <img src="./JPEG/PNG/LOGO.png" alt="Animated Logo" class="logo">
+    <div class="nav-links">
+        <a href="welcome.html">WELCOME</a>
+        <a href="ABOUTUS.html">ABOUT US</a>
+        <a href="CONTACTUS.html">CONTACT US</a>
+        <!-- <a href="services.html">SERVICES</a> -->
+        <a href="index.html" class="nav-button back">Back</a>
+        <a href="home_Page.html" class="nav-button home">Home</a>
+        <a href="ABOUTUS.html" class="nav-button forward">Forward</a>
+    </div>
+</nav></br></br></br></br></br></br></br></br>
+
+    <div class="main-container">
+        <img src="./ASSESTS/welcome_01.jpeg" alt="Welcome Girl Left" class="welcome-girl" id="leftWelcomeGirl">
+        <div class="text-container">
+            <h1>Namaste to all! Welcome to Sustainability Startup</h1>
+            <p>Thank you for visiting our website. We hope you have a great experience...</p>
+            <button class="speak-btn" onclick="speakWelcome()">Hear Welcome Message</button>
+        </div>
+        <img src="./ASSESTS/welcome_01.jpeg" alt="Welcome Girl Right" class="welcome-girl" id="rightWelcomeGirl">
+    </div>
+
+    <script>
+        // Function to speak welcome message using Web Speech API with only female voices
+        function speakWelcome() {
+            const message = "Namaste, everyone! Welcome to Sustainability Startup. Thank you so much for visiting our website; we hope you enjoy your experience";
+            const speech = new SpeechSynthesisUtterance(message);
+            speech.pitch = 1.2;
+            speech.rate = 1;
+            speech.volume = 1;
+
+            const voices = window.speechSynthesis.getVoices();
+            const femaleVoice = voices.find(voice => voice.name.toLowerCase().includes('female') || voice.lang.includes('en-IN'));
+
+            if (femaleVoice) {
+                speech.voice = femaleVoice;
+            } else {
+                speech.voice = voices.find(voice => voice.lang.includes('en-IN')) || voices[0];
+            }
+
+            window.speechSynthesis.speak(speech);
+        }
+
+        // Load voices before calling speakWelcome
+        window.speechSynthesis.onvoiceschanged = speakWelcome;
+
+        // Function to generate a random color
+        function getRandomColor() {
+            const randomValue = () => Math.floor(Math.random() * 256);
+            return `rgb(${randomValue()}, ${randomValue()}, ${randomValue()})`;
+        }
+
+        // Set intervals for independent color changes
+        setInterval(() => {
+            document.body.style.backgroundColor = getRandomColor(); // Main page background color
+        }, 1000);
+
+        setInterval(() => {
+            document.querySelector('.main-container').style.backgroundColor = getRandomColor(); // Container background color
+        }, 1000);
+
+        setInterval(() => {
+            document.querySelector('#leftWelcomeGirl').style.borderColor = getRandomColor(); // Left image border color
+        }, 1000);
+
+        setInterval(() => {
+            document.querySelector('#rightWelcomeGirl').style.borderColor = getRandomColor(); // Right image border color
+        }, 1000);
+    </script>
+
+</body>
+</html>

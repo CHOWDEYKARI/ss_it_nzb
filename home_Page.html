@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME_PAGE</title>
+    <style>
+                /* START CSS CAROUSEL SLIDE SHOW */
+        /* start CSS BLINKING TEXT */
+        .blinking-text {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            color:green;
+            animation: blinkColor 2s infinite;
+        }
+
+        /* Keyframes for blinking animation */
+        @keyframes blinkColor {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* THE END CSS BLINKING TEXT */
+
+        /* START CSS CAROUSEL SLIDE SHOW */
+        /* Container styling for the carousel */
+        .explore_Car_Rentals_Container_6 {
+            width: 90%;
+            /* Full width of the viewport */
+            height: 400px;
+            margin: 0 auto;
+            /* Center the container */
+            overflow: hidden;
+            /* Hide overflowing content */
+            border: 2px solid green;
+            /* Black border for the container */
+            background-color: lightgreen;
+            /* Silver background color */
+            position: relative;
+            /* Position for absolute child elements */
+            padding: 20px;
+            /* Padding inside the container */
+        }
+
+        /* Center the heading text */
+        h1 {
+            text-align: center;
+        }
+
+        /* Wrapper styling for carousel items */
+        .explore_Car_Rentals_Wrapper_6 {
+            display: flex;
+            /* Align items in a row */
+            transition: transform 0.5s ease-in-out;
+            /* Smooth transition for slide movement */
+        }
+
+        /* Styling for each carousel item */
+        .explore_Car_Rentals_Item_6 {
+            min-width: 510px;
+            min-height: 698px;
+            /* Each item takes up 20% of the container width */
+font-size: 10px;
+            text-align: center;
+            /* Center text inside the item */
+            transition: transform 0.5s ease-in-out;
+            /* Smooth transition for item transform */
+        }
+
+        /* Styling for images inside carousel items */
+        .explore_Car_Rentals_Item_6 img {
+            
+            width: 398px;
+            /* Fixed width for images */
+            height: 310px;
+            /* Fixed height for images */
+            border: 2px solid blue;
+            /* Blue border around images */
+            border-radius: 10px;
+            /* Rounded corners for images */
+        }
+
+        /* Styling for the heading inside each carousel item */
+        .explore_Car_Rentals_Item_6 h2 {
+            
+            color: green;
+            /* Black text color */
+        }
+
+        /* Styling for carousel buttons */
+        .explore_Car_Rentals_Button_6 {
+            
+            position: absolute;
+            /* Absolute positioning relative to the container */
+            top: 50%;
+            /* Vertically center the button */
+            transform: translateY(-50%);
+            /* Adjust for vertical centering */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background */
+            color: green;
+            /* White text color */
+            border: none;
+            /* No border */
+            padding: 10px;
+            /* Padding inside the button */
+            cursor: pointer;
+            /* Pointer cursor on hover */
+            z-index: 10;
+            /* Ensure the button is above other content */
+        }
+
+        /* Positioning for the previous button */
+        .explore_prev_6 {
+            left: 10px;
+            /* 10px from the left edge */
+        }
+
+        /* Positioning for the next button */
+        .explore_next_6 {
+            right: 10px;
+            /* 10px from the right edge */
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 1200px) {
+            .explore_Car_Rentals_Item_6 {
+                min-width: 25%;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .explore_Car_Rentals_Item_6 {
+                min-width: 33.33%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .explore_Car_Rentals_Item_6 {
+                min-width: 50%;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .explore_Car_Rentals_Item_6 {
+                min-width: 100%;
+            }
+        }
+
+        /* THE END CSS CAROUSEL SLIDE SHOW */
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color:green;
+        }
+            /* start fixed Navbar responsive */
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .navbar {
+                    flex-direction: column;
+                    /* Stack items vertically on smaller screens */
+                    padding: 1rem;
+                    /* Adjust padding */
+                }
+
+                .navbar img.logo {
+                    width: 100px;
+                    /* Reduce logo size on smaller screens */
+                }
+
+                .navbar a {
+                    margin: 0.5rem 0;
+                    /* Adjust margin for links */
+                    font-size: 16px;
+                    /* Smaller font size for links */
+                }
+
+                .nav-buttons {
+                    flex-direction: column;
+                    /* Stack buttons vertically */
+                    align-items: center;
+                    /* Center align buttons */
+                    margin: 1rem 0;
+                    /* Add margin */
+                }
+
+                .nav-button {
+                    width: 100%;
+                    /* Full width for buttons */
+                    margin: 0.5rem 0;
+                    /* Add margin for buttons */
+                    text-align: center;
+                    /* Center text */
+                }
+            }
+
+            @media (max-width: 480px) {
+                .navbar img.logo {
+                    width: 80px;
+                    /* Further reduce logo size for very small screens */
+                }
+
+                .navbar a {
+                    font-size: 14px;
+                    /* Even smaller font size for links */
+                }
+
+                .nav-button {
+                    padding: 8px 15px;
+                    /* Adjust padding for buttons */
+                }
+            }
+
+            /* the end fixed navbar responsive */
+            .navbar img.logo {
+                width: 130px;
+                /* Adjust size as needed */
+            }
+
+            /* start Navbar */
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #282c34;
+                padding: 1rem 2rem;
+                font-family: 'Arial', sans-serif;
+                position: fixed;
+                /* Fixes the navbar at the top */
+                top: 0;
+                /* Positions it at the top of the viewport */
+                width: 100%;
+                /* Ensures it spans the full width of the viewport */
+                z-index: 1000;
+                /* Keeps the navbar on top of other elements */
+            }
+
+
+            .nav-links {
+                margin-right: 1px;
+            }
+
+            .navbar a {
+                color: #e1e1e1;
+                text-decoration: none;
+                margin: 0 1rem;
+                font-size: 18px;
+                transition: color 0.3s ease-in-out;
+            }
+
+            .navbar a:hover {
+                color: #ffeb3b;
+            }
+
+            /* Back, Home, Forward Buttons */
+            /* Back, Home, Forward Buttons */
+            .nav-buttons {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0;
+                text-align: center;
+            }
+
+            .nav-button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 1em;
+                text-align: center;
+                border-radius: 5px;
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+            }
+
+            .nav-button.back {
+                margin-left: 60px;
+                background-color: #007bff;
+                /* Blue background for Back button */
+            }
+
+            .nav-button.home {
+                background-color: #ffc107;
+                /* Yellow background for Home button */
+            }
+
+            .nav-button.forward {
+                background-color: #28a745;
+                /* Green background for Forward button */
+            }
+
+            .nav-button:hover {
+                opacity: 0.8;
+            }
+
+            /* the end back, home, forward nav buttons */
+
+            /* Footer Styling */
+            .footer {
+                background-color: #282c34;
+                color: #e1e1e1;
+                width: 100%;
+                padding: 3rem 0;
+                font-family: 'Arial', sans-serif;
+            }
+
+            .footer .heading {
+                color: #ffeb3b;
+                text-transform: uppercase;
+                margin: 0 auto;
+                margin-bottom: 3rem;
+                text-align: center;
+                animation: bounceIn 20s ease-in-out;
+            }
+
+            .footer .content {
+                display: flex;
+                justify-content: space-around;
+                margin: 1.5rem;
+                flex-wrap: wrap;
+                animation: fadeInUp 15s ease-in-out;
+            }
+
+            .footer .content div {
+                border: 3px solid;
+                border-image: linear-gradient(45deg, #ff5722, #03a9f4, #4caf50, #f44336);
+                border-image-slice: 1;
+                border-radius: 12px;
+                padding: 7px;
+                margin: 0.5rem;
+                width: 22%;
+                background-color: #3c3f41;
+                color: yellow;
+            }
+
+            .footer .content p {
+                margin-bottom: 1rem;
+            }
+
+            .footer .content a {
+                text-decoration: none;
+                color: yellow;
+                transition: color 9s ease-in-out, text-shadow 0.3s ease-in-out;
+            }
+
+            .footer .content a:hover {
+                color: #ff5722;
+                text-shadow: 1px 1px 2px rgba(255, 87, 34, 0.6);
+            }
+
+            .footer .content h4 {
+                margin-bottom: 1rem;
+                font-size: 22px;
+                color: #ffeb3b;
+            }
+
+            footer {
+                text-align: center;
+                margin: 2rem auto;
+                border-top: 3px solid #ff5722;
+                padding-top: 1rem;
+            }
+
+            footer hr {
+                margin: 2rem 0;
+                border: 0;
+                border-top: 2px dashed #ff5722;
+            }
+
+            .footer-text {
+                font-size: 21px;
+                color: #e1e1e1;
+                animation: textAnimation 25s infinite;
+            }
+
+            /* Responsive Styles */
+            @media (max-width: 767px) {
+                .navbar {
+                    flex-direction: column;
+                }
+
+                .footer .content {
+                    display: block;
+                }
+
+                .footer .content div {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 1024px) {
+                .footer .content div {
+                    width: 48%;
+                }
+            }
+
+            /* Animations */
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes bounceIn {
+                from {
+                    opacity: 0;
+                    transform: scale(0.3);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes textAnimation {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    color: #ff5722;
+                }
+
+                25% {
+                    opacity: 1;
+                    transform: translateY(0);
+                    color: #03a9f4;
+                }
+
+                50% {
+                    opacity: 0.8;
+                    color: #4caf50;
+                }
+
+                75% {
+                    opacity: 1;
+                    color: #f44336;
+                }
+
+                100% {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+            }
+
+            .footer-text {
+                font-size: 21px;
+                color: #e1e1e1;
+                animation: textAnimation 5s infinite;
+                display: inline-block;
+            }
+
+            /* the end footer */
+
+        /* start social media */
+        /* Sidebar Styles */
+        .social_Media_Icons_sidebar {
+            position: fixed;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .social_Media_Icons_link {
+            display: block;
+            margin: 10px 0;
+            width: 40px;
+            height: 40px;
+
+            element {
+                background-color: white;
+                /* Sets the background color to white */
+                border: none;
+                /* Removes any border */
+            }
+
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .social_Media_Icons_link img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .social_Media_Icons_link:hover {
+            transform: scale(1.1);
+        }
+
+        /* the end social media */
+
+
+        /* start chatbot */
+
+        /* start Chatbot Styles */
+        #chat-container {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            transition: all 0.3s ease;
+            z-index: 1001;
+            /* Ensure it appears above other content */
+        }
+
+        #chat-container.minimized {
+            height: 50px;
+        }
+
+        #chat-header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        #chat-header button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #chat-box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        #chat-content {
+            flex: 1;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+
+        #user-input {
+            width: calc(100% - 60px);
+            height: 50px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+
+        #send-btn {
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #send-btn:hover {
+            background-color: #0056b3;
+        }
+
+        #chat-content div.user {
+            text-align: right;
+            margin-bottom: 5px;
+            color: #007bff;
+        }
+
+        #chat-content div.bot {
+            text-align: left;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .video-grid video {
+                width: 100%;
+            }
+        }
+
+        /*---the end chatbot-*/
+
+
+        /*--start rotate images-*/
+
+        #welcome-container {
+
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #animated-images {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .animated-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            animation: spin 10s infinite linear;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /*--the end rotate images-*/
+
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(45deg, #FF4500, #FFD700);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            font-family: 'Courier New', Courier, monospace;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+            color: #1E90FF;
+        }
+
+        .header p {
+            font-size: 1.3em;
+            margin-top: 10px;
+            color: #32CD32;
+        }
+
+        .cta-button {
+            background-color: #8A2BE2;
+            color: white;
+            padding: 15px 30px;
+            margin-top: 20px;
+            display: inline-block;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-family: 'Verdana', sans-serif;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cta-button:hover {
+            background-color: #4B0082;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #FAFAD2;
+        }
+
+        .features h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #FF6347;
+            font-family: 'Georgia', serif;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .features-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .feature {
+            width: 30%;
+            background-color: #FFF8DC;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border: 3px solid #20B2AA;
+            animation: slideIn 1s ease-in-out;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            font-family: 'Tahoma', sans-serif;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            border-color: #FF4500;
+            background-color: #F0E68C;
+        }
+
+        .feature img,
+        .feature video {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature img:hover,
+        .feature video:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .feature h3 {
+            margin-top: 15px;
+            font-size: 1.8em;
+            color: #8B0000;
+            font-family: 'Lucida Console', Monaco, monospace;
+        }
+
+        .feature p {
+            font-size: 1.1em;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .feature {
+                width: 100%;
+            }
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #2F4F4F;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+
+
+        /*--start welcome username--*/
+        .header {
+
+            background: linear-gradient(45deg, blue, #FFD700);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+
+        }
+
+        .username-display {
+            margin-left: 85px;
+            font-size: 2em;
+            color: #FF6347;
+            text-align: center;
+            margin-top: 20px;
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /*--the end user name---*/
+
+        /* START PATTU SAREES */
+        .product-grid {
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 0 auto;
+            max-width: 1000px;
+            padding: 20px;
+            height: 1200px;
+        }
+
+        .product {
+            border: 4px solid blue;
+            padding: 20px;
+            background-color: yellow;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.1s ease;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product-description {
+            margin-top: 10px;
+            font-size: 6px;
+        }
+
+        .price {
+            font-size: large;
+            margin: 10px 0;
+        }
+
+        .current-price {
+            font-size: large;
+            color: blue;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif';
+
+        }
+
+        .savings {
+            color: blue;
+            font-size: large;
+        }
+
+        .mrp {
+            text-decoration: line-through;
+            color: blue;
+            font-size: large;
+        }
+
+        /* Unique Animations for each product */
+        .product-1 {
+            animation: fadeIn 2s ease-in;
+        }
+
+        .product-2 {
+            animation: slideInLeft 2s ease;
+        }
+
+        .product-3 {
+            animation: bounceIn 2s ease-in-out;
+        }
+
+        .product-4 {
+            animation: flipInY 2s ease-in;
+        }
+
+        .product-5 {
+            animation: zoomIn 2s ease-in;
+        }
+
+        .product-6 {
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .product-7 {
+            animation: rotateIn 2s ease-in;
+        }
+
+        .product-8 {
+            animation: scaleUp 2s ease-in;
+        }
+
+        .product-9 {
+            animation: lightSpeedIn 2s ease-in;
+        }
+
+        .product-10 {
+            animation: slideInRight 2s ease;
+        }
+
+        .product-11 {
+            animation: bounceInDown 2s ease-in-out;
+        }
+
+        .product-12 {
+            animation: flipInX 2s ease-in;
+        }
+
+        .product-13 {
+            animation: rollIn 2s ease-in;
+        }
+
+        .product-14 {
+            animation: zoomOut 2s ease-in;
+        }
+
+        .product-15 {
+            animation: fadeInDown 2s ease-in-out;
+        }
+
+        .product-16 {
+            animation: slideInUp 2s ease;
+        }
+
+        .product-17 {
+            animation: rotateInDownRight 2s ease-in;
+        }
+
+        .product-18 {
+            animation: fadeInLeft 2s ease-in-out;
+        }
+
+        .product-19 {
+            animation: bounceInRight 2s ease-in;
+        }
+
+        .product-20 {
+            animation: lightSpeedOut 2s ease;
+        }
+
+        .product-21 {
+            animation: zoomInDown 2s ease-in-out;
+        }
+
+        .product-22 {
+            animation: flipInY 2s ease-in;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes flipInY {
+            from {
+                transform: rotateY(-90deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: rotateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotateIn {
+            from {
+                transform: rotate(-200deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: rotate(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes lightSpeedIn {
+            from {
+                transform: translateX(100%) skewX(-30deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceInDown {
+            0% {
+                transform: translateY(-1000px);
+                opacity: 0;
+            }
+
+            60% {
+                transform: translateY(30px);
+                opacity: 1;
+            }
+
+            80% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes flipInX {
+            from {
+                transform: rotateX(90deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: rotateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rollIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%) rotate(-120deg);
+            }
+
+            70% {
+                opacity: 1;
+                transform: translateX(0) rotate(0);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes zoomOut {
+            from {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotateInDownRight {
+            from {
+                opacity: 0;
+                transform: rotate(45deg);
+            }
+
+            to {
+                opacity: 1;
+                transform: rotate(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceInRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            60% {
+                transform: translateX(-20px);
+                opacity: 1;
+            }
+
+            80% {
+                transform: translateX(10px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes lightSpeedOut {
+            from {
+                transform: translateX(0) skewX(0deg);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateX(100%) skewX(30deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes zoomInDown {
+            from {
+                transform: scale(0.5) translateY(-100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* THE END PATTU SAREES  */
+
+        /* START HURRY BLINKING */
+        @keyframes blink {
+            0% {
+                color: red;
+            }
+
+            25% {
+                color: blue;
+            }
+
+            50% {
+                color: green;
+            }
+
+            75% {
+                color: purple;
+            }
+
+            100% {
+                color: orange;
+            }
+        }
+
+        h2 {
+            font-size: 2em;
+            animation: blink 1.5s infinite;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* THE END HURRY BLINKING */
+    </style>
+</head>
+
+<body>
+    <!-- start fixed navbar -->
+    <nav class="navbar">
+        <img src="./JPEG/PNG/LOGO.png" alt="Animated Logo" class="logo">
+        <div class="nav-links">
+            <a href="welcome.html">WELCOME</a>
+            <a href="ABOUTUS.html">ABOUT US</a>
+            <a href="CONTACTUS.html">CONTACT US</a>
+            <!-- <a href="services.html">SERVICES</a> -->
+            <a href="index.html" class="nav-button back">Back</a>
+            <a href="home_Page.html" class="nav-button home">Home</a>
+            <a href="ABOUTUS.html" class="nav-button forward">Forward</a>
+        </div>
+    </nav></br></br></br></br></br></br></br></br>
+    <!-- the end fixed navbar -->
+
+    <!-- start welcome username -->
+    <div class="username-display" id="usernameDisplay"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const username = localStorage.getItem('username');
+            const usernameDisplay = document.getElementById('usernameDisplay');
+
+            if (username) {
+                usernameDisplay.innerText = `Welcome, ${username}!`;
+                const message = new SpeechSynthesisUtterance(`Welcome, ${username}!`);
+                speechSynthesis.speak(message);
+            } else {
+                usernameDisplay.innerText = 'Welcome, Guest!';
+            }
+        });
+    </script>
+
+    <!-- the end suername welcome username -->
+
+
+<!-- START HTML AND JAVASCRIPT CAROUSEL SLIDE SHOW -->
+    <!--START HTML AND JAVASCRIPT BLINKING SUSTAINABILITY STARTUP, IT HUB NIZAMABAD -->
+    <div class="blinking-text" id="blinkingText">WELCOME</br>TO</br>SUSTAINABILITY STARTUP</br>IT HUB NIZAMABAD</div>
+
+    <script>
+        // JavaScript to handle random RGB colors
+        function getRandomColor() {
+            // Generate random values for RGB
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            return `rgb(${r},${g},${b})`;
+        }
+
+        // Change the color of the blinking text every 500 ms
+        setInterval(() => {
+            const blinkingText = document.getElementById('blinkingText');
+            blinkingText.style.color = getRandomColor();
+        }, 100);
+    </script>
+    <!--THE END HTML AND JAVASCRIPT BLINKING SUSTAINABILITY STARTUP, IT HUB NIZAMABAD -->
+
+    <!-- START HTML AND JAVASCRIPT CAROUSEL SLIDE SHOW -->
+    <!-- /*START explore_Car_Rentals_Container_6 Carousel container -->
+    <div class="explore_Car_Rentals_Container_6" id="explore_Car_Rentals_Container_6">
+        <!-- Carousel wrapper that holds all items -->
+        <div class="explore_Car_Rentals_Wrapper_6">
+            <!-- Each carousel item -->
+            <div class="explore_Car_Rentals_Item_6">
+                <img src="./JPEG/CAROUSEL_001.jpeg" alt="Delhi NCR">
+                <h2>Innovate Green, Live Clean</h2>
+            </div>
+            <div class="explore_Car_Rentals_Item_6">
+                <img src="./JPEG/CAROUSEL_002.jpeg" alt="Mumbai">
+                <h2>For the Planet, For the Future</h2>
+            </div>
+            <div class="explore_Car_Rentals_Item_6">
+                <img src="./JPEG/CAROUSEL_003.jpeg" alt="Pune">
+                <h2>Small Steps, Big Impact</h2>
+            </div>
+            <div class="explore_Car_Rentals_Item_6">
+                <img src="./JPEG/CAROUSEL_004.jpeg" alt="Hyderabad">
+                <h2>Green Choices, Bright Futures</h2>
+            </div>
+            <div class="explore_Car_Rentals_Item_6">
+                <img src="./JPEG/CAROUSEL_005.jpeg" alt="Bangalore">
+                <h2>Together for a Greener World</h2>
+            </div>
+            <div class="explore_Car_Rentals_Item_6">
+                <img src="./JPEG/CAROUSEL_006.jpeg" alt="Chennai">
+                <h2>Building the Future, Sustainably</h2>
+            </div>
+            <div class="explore_Car_Rentals_Item_6">
+                <img src="./JPEG/CAROUSEL_007.jpeg" alt="Chandigarh">
+                <h2>Your Partner in Planet-Friendly Progress</h2>
+            </div>
+            <div class="explore_Car_Rentals_Item_6">
+                <img src="./JPEG/CAROUSEL_008.jpeg" alt="Ahmedabad">
+                <h2>Eco-Friendly Solutions for Every Day</h2>
+            </div>
+            <div class="explore_Car_Rentals_Item_6">
+                <img src="./JPEG/CAROUSEL_009.jpeg" alt="Guwahati">
+                <h2>Driving Impact Through Innovation</h2>
+            </div>
+            <div class="explore_Car_Rentals_Item_6">
+                <img src="./JPEG/CAROUSEL_010.jpeg" alt="Jaipur">
+                <h2>Redesigning Today, Protecting Tomorrow</h2>
+            </div>
+            <div class="explore_Car_Rentals_Item_6">
+                <img src="./JPEG/CAROUSEL_011.jpeg" alt="Kolkata">
+                <h2>Where Responsibility Meets Innovation</h2>
+            </div>
+        </div>
+        <!-- Previous and next buttons for carousel navigation -->
+        <button class="explore_Car_Rentals_Button_6 explore_prev_6" onclick="moveSlide(-1)">&#60;</button>
+        <button class="explore_Car_Rentals_Button_6 explore_next_6" onclick="moveSlide(1)">&#62;</button>
+    </div>
+
+    <script>
+        let currentIndex = 0; // Initialize current index for carousel position
+
+        function moveSlide(direction) {
+            const carouselWrapper = document.querySelector('.explore_Car_Rentals_Wrapper_6');
+            const totalItems = document.querySelectorAll('.explore_Car_Rentals_Item_6').length;
+            const visibleItems = 5; // Number of visible items at a time
+
+            // Update the current index based on direction
+            currentIndex += direction;
+
+            // Handle boundary conditions
+            if (currentIndex < 0) {
+                currentIndex = totalItems - visibleItems;
+            } else if (currentIndex >= totalItems - visibleItems + 1) {
+                currentIndex = 0;
+            }
+
+            // Move the carousel wrapper to show the appropriate items
+            carouselWrapper.style.transform = `translateX(-${currentIndex * (100 / visibleItems)}%)`;
+        }
+
+        // Automatically move slides every 1 seconds
+        setInterval(() => {
+            moveSlide(1);
+        }, 1000);
+    </script>
+    <!-- /* THE-END HTML AND JAVASCRIPT explore_Car_Rentals_Container_6 Carousel container -->
+    </br></br>
+
+    <!-- THE END HTML AND JAVASCRIPT CAROUSEL SLIDE SHOW -->
+
+
+    <!-- start rotate images -->
+    <div id="welcome-container">
+        <div id="animated-images">
+            <img src="./ASSESTS/00021.JPEG" alt="Image 1" class="animated-image">
+            <img src="./ASSESTS/00033.JPEG" alt="Image 2" class="animated-image">
+            <img src="./ASSESTS/00023.JPEG" alt="Image 3" class="animated-image">
+            <img src="./ASSESTS/00024.JPEG" alt="Image 1" class="animated-image">
+            <img src="./ASSESTS/00025.JPEG" alt="Image 2" class="animated-image">
+            <img src="./ASSESTS/00026.JPEG" alt="Image 3" class="animated-image">
+            <img src="./ASSESTS/00027.JPEG" alt="Image 1" class="animated-image">
+            <img src="./ASSESTS/00028.JPEG" alt="Image 2" class="animated-image">
+            <img src="./ASSESTS/00033.JPEG" alt="Image 3" class="animated-image">
+            <img src="./ASSESTS/00030.JPEG" alt="Image 1" class="animated-image">
+            <img src="./ASSESTS/00031.JPEG" alt="Image 2" class="animated-image">
+            <img src="./ASSESTS/00032.JPEG" alt="Image 3" class="animated-image">
+        </div>
+    </div>
+    <script>
+        // Function to play welcome message
+        function playWelcomeMessage() {
+            const message = new SpeechSynthesisUtterance('WELCOME TO SUSTAINABILITY STARTUP, IT HUB NIZMABAD');
+            message.onstart = () => console.log('Speech started');
+            message.onend = () => console.log('Speech ended');
+            window.speechSynthesis.speak(message);
+        }
+        // Call the function when the page loads
+        window.addEventListener('load', playWelcomeMessage);
+    </script>
+    <!---the end rotate images--->
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>WELCOME TO SUSTAINABILITY STARTUP</h1>
+        <p>Empowering Change Through Sustainable Solutions.</p>
+        <a href="home_Page.html" class="cta-button">Explore Now</a>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features" id="features">
+        <h2>SUSTAINABILITY STARTUP PRODUCTS</h2>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product product-1">
+                <img src="./ASSESTS/00001.JPEG" alt="Product 1">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product product-2">
+                <img src="./ASSESTS/00002.JPEG" alt="Product 2">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product product-3">
+                <img src="./ASSESTS/00003.JPEG" alt="Product 3">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product product-4">
+                <img src="./ASSESTS/00004.JPEG" alt="Product 4">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product product-5">
+                <img src="./ASSESTS/00005.JPEG" alt="Product 5">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product product-6">
+                <img src="./ASSESTS/00006.JPEG" alt="Product 6">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product product-7">
+                <img src="./ASSESTS/00007.JPEG" alt="Product 7">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product product-8">
+                <img src="./ASSESTS/00008.JPEG" alt="Product 8">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product product-9">
+                <img src="./ASSESTS/00009.JPEG" alt="Product 9">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product product-10">
+                <img src="./ASSESTS/00010.JPEG" alt="Product 10">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product product-11">
+                <img src="./ASSESTS/00011.JPEG" alt="Product 11">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product product-12">
+                <img src="./ASSESTS/000012.JPEG" alt="Product 12">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="product product-13">
+                <img src="./ASSESTS/00013.JPEG" alt="Product 13">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p>Top rated</p>
+                </div>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="product product-14">
+                <img src="./ASSESTS/00014.JPEG" alt="Product 14">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p>Unbeatable price</p>
+                </div>
+            </div>
+
+            <!-- Product 15 -->
+            <div class="product product-15">
+                <img src="./ASSESTS/00015.JPEG" alt="Product 15">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 16 -->
+            <div class="product product-16">
+                <img src="./ASSESTS/00016.JPEG" alt="Product 16">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 17 -->
+            <div class="product product-17">
+                <img src="./ASSESTS/00017.JPEG" alt="Product 17">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 18 -->
+            <div class="product product-18">
+                <img src="./ASSESTS/00018.JPEG" alt="Product 18">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 19 -->
+            <div class="product product-19">
+                <img src="./ASSESTS/00019.JPEG" alt="Product 19">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Product 20 -->
+            <div class="product product-20">
+                <img src="./ASSESTS/00020.JPEG" alt="Product 20">
+                <div class="product-description">
+                    <h2></h2>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="savings"></span>
+                        <span class="mrp"></span>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#carousel').carousel({
+                    interval: 3000
+                });
+            });
+        </script>
+
+
+        <!-- start social media -->
+        <div class="social_Media_Icons_sidebar">
+            <a href="https://www.whatsapp.com/" class="social_Media_Icons_link" data-voice="What's up"><img
+                    src="./jpeg/png/whatsup.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"
+                class="social_Media_Icons_link" data-voice="Facebook"><img src="./jpeg/png/facebook.png"
+                    alt="Facebook"></a>
+            <a href="https://x.com/i/flow/login" class="social_Media_Icons_link" data-voice="X"><img
+                    src="./jpeg/png/x.png" alt="X"></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en" class="social_Media_Icons_link"
+                data-voice="Instagram"><img src="./jpeg/png/instagram.png" alt="Instagram"></a>
+            <a href="https://in.linkedin.com/" class="social_Media_Icons_link" data-voice="LinkedIn"><img
+                    src="./jpeg/png/linked_In.png" alt="LinkedIn"></a>
+        </div>
+
+        <script>
+            if (!('speechSynthesis' in window)) {
+                alert("Sorry, your browser does not support the Web Speech API.");
+            } else {
+                let currentUtterance = null;
+
+                function speakText(text) {
+                    if (currentUtterance) {
+                        speechSynthesis.cancel(); // Cancel any ongoing speech
+                    }
+                    currentUtterance = new SpeechSynthesisUtterance(text);
+                    currentUtterance.onend = () => currentUtterance = null; // Clear reference when done
+                    speechSynthesis.speak(currentUtterance);
+                }
+
+                document.querySelectorAll('.social_Media_Icons_link').forEach(icon => {
+                    icon.addEventListener('mouseover', () => {
+                        const voiceText = icon.getAttribute('data-voice');
+                        if (voiceText) {
+                            speakText(voiceText);
+                        }
+                    });
+
+                    icon.addEventListener('mouseout', () => {
+                        if (currentUtterance) {
+                            speechSynthesis.cancel(); // Stop speech when the mouse leaves
+                        }
+                    });
+                });
+            }
+        </script>
+        <!-- the end social media -->
+
+
+        <!---start chatbot-->
+        <div id="chat-container">
+            <div id="chat-header">
+                <h2>Chat with us</h2>
+                <button id="close-btn">&times;</button>
+            </div>
+            <div id="chat-box">
+                <div id="chat-content">
+                    <!-- Chat messages will be appended here -->
+                </div>
+                <textarea id="user-input" placeholder="Type your message here..."></textarea>
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+
+        <script>
+            // Navbar Username Blinking (Optional)
+            const usernameDisplay = document.getElementById('usernameDisplay');
+            const username = "Mr. AI";
+            if (usernameDisplay) {
+                usernameDisplay.innerText = `Welcome ${username}`;
+                usernameDisplay.style.display = 'inline';
+            }
+
+            // Chatbot Toggle
+            const chatContainer = document.getElementById('chat-container');
+            const closeBtn = document.getElementById('close-btn');
+            const sendBtn = document.getElementById('send-btn');
+            const userInput = document.getElementById('user-input');
+            const chatContent = document.getElementById('chat-content');
+
+            closeBtn.addEventListener('click', () => {
+                chatContainer.classList.toggle('minimized');
+            });
+
+            sendBtn.addEventListener('click', () => {
+                const userMessage = userInput.value.trim();
+                if (userMessage) {
+                    const userDiv = document.createElement('div');
+                    userDiv.className = 'user';
+                    userDiv.innerText = `You: ${userMessage}`;
+                    chatContent.appendChild(userDiv);
+
+                    // Immediately respond with a bot message
+                    const botDiv = document.createElement('div');
+                    botDiv.className = 'bot';
+                    botDiv.innerText = `Bot: Thank you for your message!`;
+                    chatContent.appendChild(botDiv);
+
+                    // Convert bot response to speech
+                    const utterance = new SpeechSynthesisUtterance(botDiv.innerText);
+                    speechSynthesis.speak(utterance);
+
+                    chatContent.scrollTop = chatContent.scrollHeight;
+                    userInput.value = '';
+                }
+            });
+        </script>
+        <!---the end chatbot-->
+
+        <!--start Footer -->
+        <div class="footer">
+            <div class="heading">
+                <h2>SUSTAINABILITY STARTUP<sup>™</sup></h2>
+            </div>
+            <div class="content">
+                <div class="services">
+                    <h4>Services</h4>
+                    <p><a href="#">SUSTAINABILITY STARTUP VIDEOS</a></p>
+                    <p><a href="#">SUSTAINABILITY STARTUP IMAGES</a></p>
+                    
+                </div>
+                <div class="social-media">
+                    <h4>Social</h4>
+                    <p><a href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i> Linkedin</a></p>
+                    <p><a href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i> X</a></p>
+                    <p><a href="https://github.com/"><i class="fab fa-github"></i> Github</a></p>
+                    <p><a href="https://www.facebook.com/codewithfaraz"><i class="fab fa-facebook"></i> Facebook</a></p>
+                    <p><a href="https://www.instagram.com/codewithfaraz"><i class="fab fa-instagram"></i> Instagram</a>
+                    </p>
+                </div>
+                <div class="links">
+                    <h4>Quick links</h4>
+                    <p><a href="home_Page.html">HOME PAGE</a></p>
+                    <p><a href="ABOUTUS.html">ABOUT US</a></p>
+                    <p><a href="CONTACTUS.html">CONTACT US</a></p>
+                    <!-- <p><a href="services.html">SERVICES</a></p> -->
+                </div>
+                <div class="details">
+                    <h4 class="address">ADDRESS:</h4>
+                    <p>H.NO: 6-2-125,<br /> IT HUB NIZAMABAD,<br /> BESIDE COLLECTOR OFFICE,<br /> BYPASS ROAD,<br />
+                        NEAR G.G. COLLEGE,<br /> NIZAMABAD, TELANGANA STATE,<br /> INDIA, PIN CODE: 503001</p>
+                </div>
+            </div>
+            <hr>
+            <footer>
+                <div class="footer-text">
+                    (C) All rights reserved 2024 - 2025. </br> Designed and developed by MAHESHWER_CHOWDEYKARI  . </br> Sustainability Startup, IT Hub, Nizamabad.                </div>
+                <hr />
+            </footer>
+        </div>
+        <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

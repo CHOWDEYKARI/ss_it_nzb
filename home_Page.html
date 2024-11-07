@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME_PAGE</title>
     <style>
-                /* START CSS CAROUSEL SLIDE SHOW */
+        /* START CSS CAROUSEL SLIDE SHOW */
         /* start CSS BLINKING TEXT */
         .blinking-text {
             font-size: 20px;
             font-weight: bold;
             text-align: center;
-            color:green;
+            color: green;
             animation: blinkColor 2s infinite;
         }
 
@@ -69,7 +69,7 @@
             min-width: 510px;
             min-height: 698px;
             /* Each item takes up 20% of the container width */
-font-size: 10px;
+            font-size: 10px;
             text-align: center;
             /* Center text inside the item */
             transition: transform 0.5s ease-in-out;
@@ -78,7 +78,7 @@ font-size: 10px;
 
         /* Styling for images inside carousel items */
         .explore_Car_Rentals_Item_6 img {
-            
+
             width: 398px;
             /* Fixed width for images */
             height: 310px;
@@ -91,14 +91,14 @@ font-size: 10px;
 
         /* Styling for the heading inside each carousel item */
         .explore_Car_Rentals_Item_6 h2 {
-            
+
             color: green;
             /* Black text color */
         }
 
         /* Styling for carousel buttons */
         .explore_Car_Rentals_Button_6 {
-            
+
             position: absolute;
             /* Absolute positioning relative to the container */
             top: 50%;
@@ -157,325 +157,326 @@ font-size: 10px;
         }
 
         /* THE END CSS CAROUSEL SLIDE SHOW */
-        
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            color:green;
+            color: green;
         }
-            /* start fixed Navbar responsive */
-            /* Responsive adjustments */
-            @media (max-width: 768px) {
-                .navbar {
-                    flex-direction: column;
-                    /* Stack items vertically on smaller screens */
-                    padding: 1rem;
-                    /* Adjust padding */
-                }
 
-                .navbar img.logo {
-                    width: 100px;
-                    /* Reduce logo size on smaller screens */
-                }
-
-                .navbar a {
-                    margin: 0.5rem 0;
-                    /* Adjust margin for links */
-                    font-size: 16px;
-                    /* Smaller font size for links */
-                }
-
-                .nav-buttons {
-                    flex-direction: column;
-                    /* Stack buttons vertically */
-                    align-items: center;
-                    /* Center align buttons */
-                    margin: 1rem 0;
-                    /* Add margin */
-                }
-
-                .nav-button {
-                    width: 100%;
-                    /* Full width for buttons */
-                    margin: 0.5rem 0;
-                    /* Add margin for buttons */
-                    text-align: center;
-                    /* Center text */
-                }
-            }
-
-            @media (max-width: 480px) {
-                .navbar img.logo {
-                    width: 80px;
-                    /* Further reduce logo size for very small screens */
-                }
-
-                .navbar a {
-                    font-size: 14px;
-                    /* Even smaller font size for links */
-                }
-
-                .nav-button {
-                    padding: 8px 15px;
-                    /* Adjust padding for buttons */
-                }
-            }
-
-            /* the end fixed navbar responsive */
-            .navbar img.logo {
-                width: 130px;
-                /* Adjust size as needed */
-            }
-
-            /* start Navbar */
+        /* start fixed Navbar responsive */
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
             .navbar {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                background-color: #282c34;
-                padding: 1rem 2rem;
-                font-family: 'Arial', sans-serif;
-                position: fixed;
-                /* Fixes the navbar at the top */
-                top: 0;
-                /* Positions it at the top of the viewport */
-                width: 100%;
-                /* Ensures it spans the full width of the viewport */
-                z-index: 1000;
-                /* Keeps the navbar on top of other elements */
+                flex-direction: column;
+                /* Stack items vertically on smaller screens */
+                padding: 1rem;
+                /* Adjust padding */
             }
 
-
-            .nav-links {
-                margin-right: 1px;
+            .navbar img.logo {
+                width: 100px;
+                /* Reduce logo size on smaller screens */
             }
 
             .navbar a {
-                color: #e1e1e1;
-                text-decoration: none;
-                margin: 0 1rem;
-                font-size: 18px;
-                transition: color 0.3s ease-in-out;
+                margin: 0.5rem 0;
+                /* Adjust margin for links */
+                font-size: 16px;
+                /* Smaller font size for links */
             }
 
-            .navbar a:hover {
-                color: #ffeb3b;
-            }
-
-            /* Back, Home, Forward Buttons */
-            /* Back, Home, Forward Buttons */
             .nav-buttons {
-                display: flex;
-                justify-content: space-between;
-                margin: 20px 0;
-                text-align: center;
+                flex-direction: column;
+                /* Stack buttons vertically */
+                align-items: center;
+                /* Center align buttons */
+                margin: 1rem 0;
+                /* Add margin */
             }
 
             .nav-button {
-                display: inline-block;
-                padding: 10px 20px;
-                font-size: 1em;
-                text-align: center;
-                border-radius: 5px;
-                text-decoration: none;
-                color: white;
-                cursor: pointer;
-            }
-
-            .nav-button.back {
-                margin-left: 60px;
-                background-color: #007bff;
-                /* Blue background for Back button */
-            }
-
-            .nav-button.home {
-                background-color: #ffc107;
-                /* Yellow background for Home button */
-            }
-
-            .nav-button.forward {
-                background-color: #28a745;
-                /* Green background for Forward button */
-            }
-
-            .nav-button:hover {
-                opacity: 0.8;
-            }
-
-            /* the end back, home, forward nav buttons */
-
-            /* Footer Styling */
-            .footer {
-                background-color: #282c34;
-                color: #e1e1e1;
                 width: 100%;
-                padding: 3rem 0;
-                font-family: 'Arial', sans-serif;
+                /* Full width for buttons */
+                margin: 0.5rem 0;
+                /* Add margin for buttons */
+                text-align: center;
+                /* Center text */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar img.logo {
+                width: 80px;
+                /* Further reduce logo size for very small screens */
             }
 
-            .footer .heading {
-                color: #ffeb3b;
-                text-transform: uppercase;
-                margin: 0 auto;
-                margin-bottom: 3rem;
-                text-align: center;
-                animation: bounceIn 20s ease-in-out;
+            .navbar a {
+                font-size: 14px;
+                /* Even smaller font size for links */
+            }
+
+            .nav-button {
+                padding: 8px 15px;
+                /* Adjust padding for buttons */
+            }
+        }
+
+        /* the end fixed navbar responsive */
+        .navbar img.logo {
+            width: 130px;
+            /* Adjust size as needed */
+        }
+
+        /* start Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #282c34;
+            padding: 1rem 2rem;
+            font-family: 'Arial', sans-serif;
+            position: fixed;
+            /* Fixes the navbar at the top */
+            top: 0;
+            /* Positions it at the top of the viewport */
+            width: 100%;
+            /* Ensures it spans the full width of the viewport */
+            z-index: 1000;
+            /* Keeps the navbar on top of other elements */
+        }
+
+
+        .nav-links {
+            margin-right: 1px;
+        }
+
+        .navbar a {
+            color: #e1e1e1;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #ffeb3b;
+        }
+
+        /* Back, Home, Forward Buttons */
+        /* Back, Home, Forward Buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .nav-button.back {
+            margin-left: 60px;
+            background-color: #007bff;
+            /* Blue background for Back button */
+        }
+
+        .nav-button.home {
+            background-color: #ffc107;
+            /* Yellow background for Home button */
+        }
+
+        .nav-button.forward {
+            background-color: #28a745;
+            /* Green background for Forward button */
+        }
+
+        .nav-button:hover {
+            opacity: 0.8;
+        }
+
+        /* the end back, home, forward nav buttons */
+
+        /* Footer Styling */
+        .footer {
+            background-color: #282c34;
+            color: #e1e1e1;
+            width: 100%;
+            padding: 3rem 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .footer .heading {
+            color: #ffeb3b;
+            text-transform: uppercase;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+            text-align: center;
+            animation: bounceIn 20s ease-in-out;
+        }
+
+        .footer .content {
+            display: flex;
+            justify-content: space-around;
+            margin: 1.5rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 15s ease-in-out;
+        }
+
+        .footer .content div {
+            border: 3px solid;
+            border-image: linear-gradient(45deg, #ff5722, #03a9f4, #4caf50, #f44336);
+            border-image-slice: 1;
+            border-radius: 12px;
+            padding: 7px;
+            margin: 0.5rem;
+            width: 22%;
+            background-color: #3c3f41;
+            color: yellow;
+        }
+
+        .footer .content p {
+            margin-bottom: 1rem;
+        }
+
+        .footer .content a {
+            text-decoration: none;
+            color: yellow;
+            transition: color 9s ease-in-out, text-shadow 0.3s ease-in-out;
+        }
+
+        .footer .content a:hover {
+            color: #ff5722;
+            text-shadow: 1px 1px 2px rgba(255, 87, 34, 0.6);
+        }
+
+        .footer .content h4 {
+            margin-bottom: 1rem;
+            font-size: 22px;
+            color: #ffeb3b;
+        }
+
+        footer {
+            text-align: center;
+            margin: 2rem auto;
+            border-top: 3px solid #ff5722;
+            padding-top: 1rem;
+        }
+
+        footer hr {
+            margin: 2rem 0;
+            border: 0;
+            border-top: 2px dashed #ff5722;
+        }
+
+        .footer-text {
+            font-size: 21px;
+            color: #e1e1e1;
+            animation: textAnimation 25s infinite;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 767px) {
+            .navbar {
+                flex-direction: column;
             }
 
             .footer .content {
-                display: flex;
-                justify-content: space-around;
-                margin: 1.5rem;
-                flex-wrap: wrap;
-                animation: fadeInUp 15s ease-in-out;
+                display: block;
             }
 
             .footer .content div {
-                border: 3px solid;
-                border-image: linear-gradient(45deg, #ff5722, #03a9f4, #4caf50, #f44336);
-                border-image-slice: 1;
-                border-radius: 12px;
-                padding: 7px;
-                margin: 0.5rem;
-                width: 22%;
-                background-color: #3c3f41;
-                color: yellow;
-            }
-
-            .footer .content p {
+                width: 100%;
                 margin-bottom: 1rem;
             }
+        }
 
-            .footer .content a {
-                text-decoration: none;
-                color: yellow;
-                transition: color 9s ease-in-out, text-shadow 0.3s ease-in-out;
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .footer .content div {
+                width: 48%;
+            }
+        }
+
+        /* Animations */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
             }
 
-            .footer .content a:hover {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes bounceIn {
+            from {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes textAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
                 color: #ff5722;
-                text-shadow: 1px 1px 2px rgba(255, 87, 34, 0.6);
             }
 
-            .footer .content h4 {
-                margin-bottom: 1rem;
-                font-size: 22px;
-                color: #ffeb3b;
+            25% {
+                opacity: 1;
+                transform: translateY(0);
+                color: #03a9f4;
             }
 
-            footer {
-                text-align: center;
-                margin: 2rem auto;
-                border-top: 3px solid #ff5722;
-                padding-top: 1rem;
+            50% {
+                opacity: 0.8;
+                color: #4caf50;
             }
 
-            footer hr {
-                margin: 2rem 0;
-                border: 0;
-                border-top: 2px dashed #ff5722;
+            75% {
+                opacity: 1;
+                color: #f44336;
             }
 
-            .footer-text {
-                font-size: 21px;
-                color: #e1e1e1;
-                animation: textAnimation 25s infinite;
+            100% {
+                opacity: 0;
+                transform: translateY(-20px);
             }
+        }
 
-            /* Responsive Styles */
-            @media (max-width: 767px) {
-                .navbar {
-                    flex-direction: column;
-                }
+        .footer-text {
+            font-size: 21px;
+            color: #e1e1e1;
+            animation: textAnimation 5s infinite;
+            display: inline-block;
+        }
 
-                .footer .content {
-                    display: block;
-                }
-
-                .footer .content div {
-                    width: 100%;
-                    margin-bottom: 1rem;
-                }
-            }
-
-            @media (min-width: 768px) and (max-width: 1024px) {
-                .footer .content div {
-                    width: 48%;
-                }
-            }
-
-            /* Animations */
-            @keyframes spin {
-                from {
-                    transform: rotate(0deg);
-                }
-
-                to {
-                    transform: rotate(360deg);
-                }
-            }
-
-            @keyframes bounceIn {
-                from {
-                    opacity: 0;
-                    transform: scale(0.3);
-                }
-
-                to {
-                    opacity: 1;
-                    transform: scale(1);
-                }
-            }
-
-            @keyframes fadeInUp {
-                from {
-                    opacity: 0;
-                    transform: translateY(20px);
-                }
-
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-
-            @keyframes textAnimation {
-                0% {
-                    opacity: 0;
-                    transform: translateY(20px);
-                    color: #ff5722;
-                }
-
-                25% {
-                    opacity: 1;
-                    transform: translateY(0);
-                    color: #03a9f4;
-                }
-
-                50% {
-                    opacity: 0.8;
-                    color: #4caf50;
-                }
-
-                75% {
-                    opacity: 1;
-                    color: #f44336;
-                }
-
-                100% {
-                    opacity: 0;
-                    transform: translateY(-20px);
-                }
-            }
-
-            .footer-text {
-                font-size: 21px;
-                color: #e1e1e1;
-                animation: textAnimation 5s infinite;
-                display: inline-block;
-            }
-
-            /* the end footer */
+        /* the end footer */
 
         /* start social media */
         /* Sidebar Styles */
@@ -1321,7 +1322,7 @@ font-size: 10px;
 <body>
     <!-- start fixed navbar -->
     <nav class="navbar">
-        <img src="./JPEG/PNG/LOGO.png" alt="Animated Logo" class="logo">
+        <img src="./src/JPEG/PNG/LOGO.png" alt="Animated Logo" class="logo">
         <div class="nav-links">
             <a href="welcome.html">WELCOME</a>
             <a href="ABOUTUS.html">ABOUT US</a>
@@ -1354,7 +1355,7 @@ font-size: 10px;
     <!-- the end suername welcome username -->
 
 
-<!-- START HTML AND JAVASCRIPT CAROUSEL SLIDE SHOW -->
+    <!-- START HTML AND JAVASCRIPT CAROUSEL SLIDE SHOW -->
     <!--START HTML AND JAVASCRIPT BLINKING SUSTAINABILITY STARTUP, IT HUB NIZAMABAD -->
     <div class="blinking-text" id="blinkingText">WELCOME</br>TO</br>SUSTAINABILITY STARTUP</br>IT HUB NIZAMABAD</div>
 
@@ -1383,47 +1384,47 @@ font-size: 10px;
         <div class="explore_Car_Rentals_Wrapper_6">
             <!-- Each carousel item -->
             <div class="explore_Car_Rentals_Item_6">
-                <img src="./src/JPEG/CAROUSEL_001.jpeg" alt="Delhi NCR">
+                <img src="./src/jpeg/CAROUSEL_001.jpeg" alt="Delhi NCR">
                 <h2>Innovate Green, Live Clean</h2>
             </div>
             <div class="explore_Car_Rentals_Item_6">
-                <img src="./src/JPEG/CAROUSEL_002.jpeg" alt="Mumbai">
+                <img src="./src/jpeg/CAROUSEL_002.jpeg" alt="Mumbai">
                 <h2>For the Planet, For the Future</h2>
             </div>
             <div class="explore_Car_Rentals_Item_6">
-                <img src="./src/JPEG/CAROUSEL_003.jpeg" alt="Pune">
+                <img src="./src/jpeg/CAROUSEL_003.jpeg" alt="Pune">
                 <h2>Small Steps, Big Impact</h2>
             </div>
             <div class="explore_Car_Rentals_Item_6">
-                <img src="./src/JPEG/CAROUSEL_004.jpeg" alt="Hyderabad">
+                <img src="./src/jpeg/CAROUSEL_004.jpeg" alt="Hyderabad">
                 <h2>Green Choices, Bright Futures</h2>
             </div>
             <div class="explore_Car_Rentals_Item_6">
-                <img src="./src/JPEG/CAROUSEL_005.jpeg" alt="Bangalore">
+                <img src="./src/jpeg/CAROUSEL_005.jpeg" alt="Bangalore">
                 <h2>Together for a Greener World</h2>
             </div>
             <div class="explore_Car_Rentals_Item_6">
-                <img src="./src/JPEG/CAROUSEL_006.jpeg" alt="Chennai">
+                <img src="./src/jpeg/CAROUSEL_006.jpeg" alt="Chennai">
                 <h2>Building the Future, Sustainably</h2>
             </div>
             <div class="explore_Car_Rentals_Item_6">
-                <img src="./src/JPEG/CAROUSEL_007.jpeg" alt="Chandigarh">
+                <img src="./src/jpeg/CAROUSEL_007.jpeg" alt="Chandigarh">
                 <h2>Your Partner in Planet-Friendly Progress</h2>
             </div>
             <div class="explore_Car_Rentals_Item_6">
-                <img src="./src/JPEG/CAROUSEL_008.jpeg" alt="Ahmedabad">
+                <img src="./src/jpeg/CAROUSEL_008.jpeg" alt="Ahmedabad">
                 <h2>Eco-Friendly Solutions for Every Day</h2>
             </div>
             <div class="explore_Car_Rentals_Item_6">
-                <img src="./src/JPEG/CAROUSEL_009.jpeg" alt="Guwahati">
+                <img src="./src/jpeg/CAROUSEL_009.jpeg" alt="Guwahati">
                 <h2>Driving Impact Through Innovation</h2>
             </div>
             <div class="explore_Car_Rentals_Item_6">
-                <img src="./src/JPEG/CAROUSEL_010.jpeg" alt="Jaipur">
+                <img src="./src/jpeg/CAROUSEL_010.jpeg" alt="Jaipur">
                 <h2>Redesigning Today, Protecting Tomorrow</h2>
             </div>
             <div class="explore_Car_Rentals_Item_6">
-                <img src="./src/JPEG/CAROUSEL_011.jpeg" alt="Kolkata">
+                <img src="./src/jpeg/CAROUSEL_011.jpeg" alt="Kolkata">
                 <h2>Where Responsibility Meets Innovation</h2>
             </div>
         </div>
@@ -1468,18 +1469,18 @@ font-size: 10px;
     <!-- start rotate images -->
     <div id="welcome-container">
         <div id="animated-images">
-            <img src="./ASSESTS/00021.JPEG" alt="Image 1" class="animated-image">
-            <img src="./ASSESTS/00033.JPEG" alt="Image 2" class="animated-image">
-            <img src="./ASSESTS/00023.JPEG" alt="Image 3" class="animated-image">
-            <img src="./ASSESTS/00024.JPEG" alt="Image 1" class="animated-image">
-            <img src="./ASSESTS/00025.JPEG" alt="Image 2" class="animated-image">
-            <img src="./ASSESTS/00026.JPEG" alt="Image 3" class="animated-image">
-            <img src="./ASSESTS/00027.JPEG" alt="Image 1" class="animated-image">
-            <img src="./ASSESTS/00028.JPEG" alt="Image 2" class="animated-image">
-            <img src="./ASSESTS/00033.JPEG" alt="Image 3" class="animated-image">
-            <img src="./ASSESTS/00030.JPEG" alt="Image 1" class="animated-image">
-            <img src="./ASSESTS/00031.JPEG" alt="Image 2" class="animated-image">
-            <img src="./ASSESTS/00032.JPEG" alt="Image 3" class="animated-image">
+            <img src="./src/ASSESTS/00021.JPEG" alt="Image 1" class="animated-image">
+            <img src="./src/ASSESTS/00033.JPEG" alt="Image 2" class="animated-image">
+            <img src="./src/ASSESTS/00023.JPEG" alt="Image 3" class="animated-image">
+            <img src="./src/ASSESTS/00024.JPEG" alt="Image 1" class="animated-image">
+            <img src="./src/ASSESTS/00025.JPEG" alt="Image 2" class="animated-image">
+            <img src="./src/ASSESTS/00026.JPEG" alt="Image 3" class="animated-image">
+            <img src="./src/ASSESTS/00027.JPEG" alt="Image 1" class="animated-image">
+            <img src="./src/ASSESTS/00028.JPEG" alt="Image 2" class="animated-image">
+            <img src="./src/ASSESTS/00033.JPEG" alt="Image 3" class="animated-image">
+            <img src="./src/ASSESTS/00030.JPEG" alt="Image 1" class="animated-image">
+            <img src="./src/ASSESTS/00031.JPEG" alt="Image 2" class="animated-image">
+            <img src="./src/ASSESTS/00032.JPEG" alt="Image 3" class="animated-image">
         </div>
     </div>
     <script>
@@ -1509,7 +1510,7 @@ font-size: 10px;
         <div class="product-grid">
             <!-- Product 1 -->
             <div class="product product-1">
-                <img src="./ASSESTS/00001.JPEG" alt="Product 1">
+                <img src="./src/ASSESTS/00001.JPEG" alt="Product 1">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1523,7 +1524,7 @@ font-size: 10px;
 
             <!-- Product 2 -->
             <div class="product product-2">
-                <img src="./ASSESTS/00002.JPEG" alt="Product 2">
+                <img src="./src/ASSESTS/00002.JPEG" alt="Product 2">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1538,7 +1539,7 @@ font-size: 10px;
 
             <!-- Product 3 -->
             <div class="product product-3">
-                <img src="./ASSESTS/00003.JPEG" alt="Product 3">
+                <img src="./src/ASSESTS/00003.JPEG" alt="Product 3">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1552,7 +1553,7 @@ font-size: 10px;
 
             <!-- Product 4 -->
             <div class="product product-4">
-                <img src="./ASSESTS/00004.JPEG" alt="Product 4">
+                <img src="./src/ASSESTS/00004.JPEG" alt="Product 4">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1566,7 +1567,7 @@ font-size: 10px;
 
             <!-- Product 5 -->
             <div class="product product-5">
-                <img src="./ASSESTS/00005.JPEG" alt="Product 5">
+                <img src="./src/ASSESTS/00005.JPEG" alt="Product 5">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1580,7 +1581,7 @@ font-size: 10px;
 
             <!-- Product 6 -->
             <div class="product product-6">
-                <img src="./ASSESTS/00006.JPEG" alt="Product 6">
+                <img src="./src/ASSESTS/00006.JPEG" alt="Product 6">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1594,7 +1595,7 @@ font-size: 10px;
 
             <!-- Product 7 -->
             <div class="product product-7">
-                <img src="./ASSESTS/00007.JPEG" alt="Product 7">
+                <img src="./src/ASSESTS/00007.JPEG" alt="Product 7">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1608,7 +1609,7 @@ font-size: 10px;
 
             <!-- Product 8 -->
             <div class="product product-8">
-                <img src="./ASSESTS/00008.JPEG" alt="Product 8">
+                <img src="./src/ASSESTS/00008.JPEG" alt="Product 8">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1622,7 +1623,7 @@ font-size: 10px;
 
             <!-- Product 9 -->
             <div class="product product-9">
-                <img src="./ASSESTS/00009.JPEG" alt="Product 9">
+                <img src="./src/ASSESTS/00009.JPEG" alt="Product 9">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1636,7 +1637,7 @@ font-size: 10px;
 
             <!-- Product 10 -->
             <div class="product product-10">
-                <img src="./ASSESTS/00010.JPEG" alt="Product 10">
+                <img src="./src/ASSESTS/00010.JPEG" alt="Product 10">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1650,7 +1651,7 @@ font-size: 10px;
 
             <!-- Product 11 -->
             <div class="product product-11">
-                <img src="./ASSESTS/00011.JPEG" alt="Product 11">
+                <img src="./src/ASSESTS/00011.JPEG" alt="Product 11">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1664,7 +1665,7 @@ font-size: 10px;
 
             <!-- Product 12 -->
             <div class="product product-12">
-                <img src="./ASSESTS/000012.JPEG" alt="Product 12">
+                <img src="./src/ASSESTS/000012.JPEG" alt="Product 12">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1678,7 +1679,7 @@ font-size: 10px;
 
             <!-- Product 13 -->
             <div class="product product-13">
-                <img src="./ASSESTS/00013.JPEG" alt="Product 13">
+                <img src="./src/ASSESTS/00013.JPEG" alt="Product 13">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1692,7 +1693,7 @@ font-size: 10px;
 
             <!-- Product 14 -->
             <div class="product product-14">
-                <img src="./ASSESTS/00014.JPEG" alt="Product 14">
+                <img src="./src/ASSESTS/00014.JPEG" alt="Product 14">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1706,7 +1707,7 @@ font-size: 10px;
 
             <!-- Product 15 -->
             <div class="product product-15">
-                <img src="./ASSESTS/00015.JPEG" alt="Product 15">
+                <img src="./src/ASSESTS/00015.JPEG" alt="Product 15">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1720,7 +1721,7 @@ font-size: 10px;
 
             <!-- Product 16 -->
             <div class="product product-16">
-                <img src="./ASSESTS/00016.JPEG" alt="Product 16">
+                <img src="./src/ASSESTS/00016.JPEG" alt="Product 16">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1734,7 +1735,7 @@ font-size: 10px;
 
             <!-- Product 17 -->
             <div class="product product-17">
-                <img src="./ASSESTS/00017.JPEG" alt="Product 17">
+                <img src="./src/ASSESTS/00017.JPEG" alt="Product 17">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1748,7 +1749,7 @@ font-size: 10px;
 
             <!-- Product 18 -->
             <div class="product product-18">
-                <img src="./ASSESTS/00018.JPEG" alt="Product 18">
+                <img src="./src/ASSESTS/00018.JPEG" alt="Product 18">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1762,7 +1763,7 @@ font-size: 10px;
 
             <!-- Product 19 -->
             <div class="product product-19">
-                <img src="./ASSESTS/00019.JPEG" alt="Product 19">
+                <img src="./src/ASSESTS/00019.JPEG" alt="Product 19">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1776,7 +1777,7 @@ font-size: 10px;
 
             <!-- Product 20 -->
             <div class="product product-20">
-                <img src="./ASSESTS/00020.JPEG" alt="Product 20">
+                <img src="./src/ASSESTS/00020.JPEG" alt="Product 20">
                 <div class="product-description">
                     <h2></h2>
                     <div class="price">
@@ -1813,16 +1814,16 @@ font-size: 10px;
         <!-- start social media -->
         <div class="social_Media_Icons_sidebar">
             <a href="https://www.whatsapp.com/" class="social_Media_Icons_link" data-voice="What's up"><img
-                    src="./jpeg/png/whatsup.png" alt="WhatsApp"></a>
+                    src="./src/jpeg/png/whatsup.png" alt="WhatsApp"></a>
             <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"
-                class="social_Media_Icons_link" data-voice="Facebook"><img src="./jpeg/png/facebook.png"
+                class="social_Media_Icons_link" data-voice="Facebook"><img src="./src/jpeg/png/facebook.png"
                     alt="Facebook"></a>
             <a href="https://x.com/i/flow/login" class="social_Media_Icons_link" data-voice="X"><img
-                    src="./jpeg/png/x.png" alt="X"></a>
+                    src="./src/jpeg/png/x.png" alt="X"></a>
             <a href="https://www.instagram.com/accounts/login/?hl=en" class="social_Media_Icons_link"
-                data-voice="Instagram"><img src="./jpeg/png/instagram.png" alt="Instagram"></a>
+                data-voice="Instagram"><img src="./src/jpeg/png/instagram.png" alt="Instagram"></a>
             <a href="https://in.linkedin.com/" class="social_Media_Icons_link" data-voice="LinkedIn"><img
-                    src="./jpeg/png/linked_In.png" alt="LinkedIn"></a>
+                    src="./src/jpeg/png/linked_In.png" alt="LinkedIn"></a>
         </div>
 
         <script>
@@ -1929,7 +1930,7 @@ font-size: 10px;
                     <h4>Services</h4>
                     <p><a href="#">SUSTAINABILITY STARTUP VIDEOS</a></p>
                     <p><a href="#">SUSTAINABILITY STARTUP IMAGES</a></p>
-                    
+
                 </div>
                 <div class="social-media">
                     <h4>Social</h4>
@@ -1956,7 +1957,8 @@ font-size: 10px;
             <hr>
             <footer>
                 <div class="footer-text">
-                    (C) All rights reserved 2024 - 2025. </br> Designed and developed by MAHESHWER_CHOWDEYKARI  . </br> Sustainability Startup, IT Hub, Nizamabad.                </div>
+                    (C) All rights reserved 2024 - 2025. </br> Designed and developed by MAHESHWER_CHOWDEYKARI . </br>
+                    Sustainability Startup, IT Hub, Nizamabad. </div>
                 <hr />
             </footer>
         </div>
